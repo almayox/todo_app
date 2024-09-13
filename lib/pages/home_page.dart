@@ -48,18 +48,26 @@ class _MyAppState extends State<HomePage> {
     );
   }
 
+  // delete task function
+
+  void deleteTask(index) {
+    setState(() {
+      toDoList.removeAt(index);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.yellow[200],
       appBar: AppBar(
         backgroundColor: Colors.yellow,
-        title: Text('To Do'),
+        title: const Text('To Do'),
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.yellow,
-        child: Icon(Icons.add),
         onPressed: createNewTask,
+        child: Icon(Icons.add),
       ),
       body: ListView.builder(
         itemCount: toDoList.length,
@@ -68,6 +76,7 @@ class _MyAppState extends State<HomePage> {
             taskName: toDoList[index][0],
             taskCompleted: toDoList[index][1],
             onChanged: (value) => checkBoxChanged(value, index),
+            deleteTask: (p0) => deleteTask(index),
           );
         },
       ),
