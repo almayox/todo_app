@@ -43,5 +43,23 @@ This Flutter-based To-Do app helps you manage your tasks efficiently by providin
 
 ## License
 
-This project is licensed under the MIT License.
+- This project is licensed under the MIT License - see the LICENSE below for details.
+
+
+## MIT License
+
+1. Permissions:
+
+- Allows anyone to use, copy, modify, merge, publish, and distribute the software freely.
+- They can even use it in proprietary projects (including commercial products).
+
+
+2. Conditions:
+
+- Requires attribution: You must include the original copyright and license notice in any copy of the software.
+
+
+2. Limitations:
+
+- No warranty is provided for the software. If something goes wrong, the original authors are not liable.
 
